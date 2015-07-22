@@ -13,14 +13,14 @@ A function that calculates and returns the inverse matrix
 for the matrix stored by the special object 
 created with the above function.
 
-### Use case example:
-> myMatrix <- NULL
+### Use case example for the R console:
+myMatrix <- NULL
 
-> myMatrix <- makeCacheMatrix()
+myMatrix <- makeCacheMatrix()
 
-> myMatrix$set(matrix(c(3, 1, 2, 4, 5, 6, 9, 7, 8), nrow=3, ncol=3, byrow=TRUE))
+myMatrix$set(matrix(c(3, 1, 2, 4, 5, 6, 9, 7, 8), nrow=3, ncol=3, byrow=TRUE))
 
-> myMatrix$get()
+myMatrix$get()
 
   [,1] [,2] [,3]
   
@@ -30,7 +30,7 @@ created with the above function.
   
   [3,]    9    7    8
   
-> cacheSolve(myMatrix)
+cacheSolve(myMatrix)
 
   [,1]       [,2]       [,3]
   
@@ -40,7 +40,7 @@ created with the above function.
   
   [3,]  0.9444444  0.6666667 -0.6111111
   
-> cacheSolve(myMatrix)
+cacheSolve(myMatrix)
 
 getting cached data
 
