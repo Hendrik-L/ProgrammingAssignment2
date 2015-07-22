@@ -1,19 +1,19 @@
-### Data Science Specialization, R Programming Course
+## Data Science Specialization, R Programming Course
 
-## Programming Assignment 2:
+# Programming Assignment 2:
 Creating a mechanism that caches results and thus saves time
 if time-consuming matrix inversions are repeatedly required.
 
-## makeCacheMatrix:
+# makeCacheMatrix:
 A function that creates a special object which stores a matrix 
 and caches its inversed version. 
 
-## cacheSolve:
+# cacheSolve:
 A function that calculates and returns the inverse matrix 
 for the matrix stored by the special object 
 created with the above function.
 
-## Use case example:
+# Use case example:
 > myMatrix <- NULL
 > myMatrix <- makeCacheMatrix()
 > myMatrix$set(matrix(c(3, 1, 2, 4, 5, 6, 9, 7, 8), nrow=3, ncol=3, byrow=TRUE))
